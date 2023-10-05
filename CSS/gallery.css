@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Quela', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/background\ gallery.jpg);
+    background-size: cover;
+    background-repeat: no-repeat repeat;
+    padding: 0;
+    margin: 0;
+}
+
+/*  1st part */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.503);
+    padding: 0 5%;
+    margin: 0;
+}
+
+.header_left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+}
+
+.header_left span {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+.header_right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+.header_right a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.729);
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.header_icons{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.header_icons span{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.729);
+    font-size: 200%;
+}
+
+/* 2nd part */
+.gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery_of_three{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.gallery_of_three img{
+    object-fit: cover;
+    width: 450px;
+    height: 300px;
+    border: solid 1px #CCC
+}
+
+/* 3rd part */
+.poster{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin: 0;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 100px;
+}
+
+.poster img{
+    width: 300px;
+    height: 500px;
+    border: solid 1px #CCC
+}
+
+.rotate_gallery{
+    align-self: center;
+    width:300px;
+    height:200px;
+    transform-style: preserve-3d;
+    animation:rotate 20s linear infinite;
+  }
+  
+  @keyframes rotate{
+    from{
+      transform:perspective(1200px) rotateY(0deg);
+    }
+    
+    to{
+      transform:perspective(1200px) rotateY(360deg);
+    }
+  }
+  
+  .rotate_gallery span{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-origin:center;
+    transform-style:preserve-3d;
+    transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+  }
+  
+  .rotate_gallery span img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }

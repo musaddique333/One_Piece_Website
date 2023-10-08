@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  font-family: "Quela", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../images/background/background_plot.jpg);
+  background-position: top;
+  padding: 0;
+  margin: 0;
+}
+
+/*  1st part */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0.503);
+  padding: 0 5%;
+  margin: 0 0 5% 0;
+}
+
+.header_left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header_left span {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  font-size: 300%;
+  font-weight: bolder;
+}
+
+.header_left span:hover {
+  color: rgba(255, 255, 255, 0.775);
+  text-shadow: 2px 2px rgb(255, 0, 0);
+}
+
+.header_right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.header_right a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.729);
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.header_right a:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+}
+
+.header_icons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.header_icons img {
+  cursor: pointer;
+  height: 30px;
+}
+
+.header_icons img:hover {
+  transform: scale(1.2);
+}
+
+/* logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo img {
+  height: 200px;
+}
+
+/* table of contents part */
+.toc-wrapper {
+  background: #fff;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+  min-width: 600px;
+  max-width: fit-content;
+  margin: auto;
+  border-radius: 0 50px 0 50px;
+  padding: 0;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.toc-header {
+  background: #181d3b;
+  padding: 30px;
+  margin: 0;
+  border-radius: 0 50px 0 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.toc-heading {
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+.toc-list-wrapper {
+  background-color: #181d3b;
+  border-radius: 50px 50px 0 50px;
+}
+
+.toc-list-main {
+  border-radius: 0 0 0 100px;
+  background: #fff;
+  margin: 0;
+  padding: 50px;
+  list-style: none;
+}
+
+.toc-list {
+  border-radius: 0 0 0 100px;
+  background: #fff;
+  margin: 0;
+  list-style: none;
+}
+
+.toc-list-item {
+  margin: 15px;
+}
+
+.toc-list-item a {
+  position: relative;
+  color: #4c4c4c;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+  padding: 10px 10px 10px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.toc-list-item a::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #f65964;
+  position: absolute;
+  border-radius: 60%;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.toc-list-item a:hover {
+  box-shadow: 0 8px 15px rgb(246, 90, 100, 0.55);
+  background: #f65964;
+  color: #fff;
+}
+
+.toc-list-item a:hover::before {
+  background: #fff;
+}
+
+/* cotent part */
+.content_of_plot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 5%;
+  margin: 5% 0 0 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: #181d3b;
+  border-radius: 50px;
+}
+
+.arcs_and_sagas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content_of_plot h1,
+.content_of_plot h2,
+.content_of_plot h3,
+.content_of_plot p{
+  font-weight: bold;
+  color: rgba(0, 0, 0);
+}
+
+.content_of_plot h1:hover,
+.content_of_plot h2:hover,
+.content_of_plot h3:hover,
+.content_of_plot p:hover{
+  color: rgba(255, 255, 255);
+  background-color: #f65964;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: fit-content;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6)
+  
+}
+
+.content_of_plot h1{
+  font-size: 300%;
+  color: rgba(0, 0, 0);
+}
+
+.content_of_plot h2{
+  font-size: 250%;
+  color: rgb(0, 94, 255);
+}
+
+.content_of_plot h3{
+  font-size: 200%;
+  color: rgb(0, 255, 149);
+}
+
+.content_of_plot h1:not(:hover),
+.content_of_plot h2:not(:hover),
+.content_of_plot h3:not(:hover){
+  text-shadow: 10px 5px 10px rgba(96, 96, 96, 0.682);
+  text-decoration: 2px underline rgb(255, 0, 0);
+}
+
+.content_of_plot p{
+  font-size: 120%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.616);
+  margin: 10% 0 0 0;
+  padding: 0 5%;
+}
+
+.footer footer {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 120%;
+  font-weight: bold;
+}

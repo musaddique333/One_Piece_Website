@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Quela', sans-serif;
     margin: 0;
@@ -9,7 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../images/background\ gallery.jpg);
+    background-image: url(../images/background/background_gallery.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat repeat;
     padding: 0;
@@ -24,14 +25,13 @@ body {
     height: max-content;
     background-color: rgba(0, 0, 0, 0.503);
     padding: 0 5%;
-    margin: 0;
+    margin: 0 0 5% 0;
 }
 
 .header_left {
     flex: 1;
     display: flex;
     align-items: center;
-    /* justify-content: flex-start; */
 }
 
 .header_left span {
@@ -39,6 +39,11 @@ body {
     color: rgb(255, 0, 0);
     font-size: 300%;
     font-weight: bolder;
+}
+
+.header_left span:hover {
+    color: rgba(255, 255, 255, 0.775);
+    text-shadow: 2px 2px rgb(255, 0, 0);
 }
 
 .header_right {
@@ -57,7 +62,12 @@ body {
     font-weight: bold;
 }
 
-.header_icons{
+.header_right a:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+}
+
+.header_icons {
     flex: 1;
     display: flex;
     align-items: center;
@@ -65,20 +75,36 @@ body {
     gap: 10px;
 }
 
-.header_icons span{
+.header_icons img {
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.729);
-    font-size: 200%;
+    height: 30px;
+}
+
+.header_icons img:hover {
+    transform: scale(1.2);
+}
+
+/* logo section */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.logo img {
+    height: 200px;
 }
 
 /* 2nd part */
-.gallery{
+.gallery {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.gallery_of_three{
+.gallery_of_three {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,7 +115,7 @@ body {
     margin-bottom: 100px;
 }
 
-.gallery_of_three img{
+.gallery_of_three img {
     object-fit: cover;
     width: 450px;
     height: 300px;
@@ -97,7 +123,7 @@ body {
 }
 
 /* 3rd part */
-.poster{
+.poster {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,42 +134,59 @@ body {
     margin-top: 100px;
 }
 
-.poster img{
+.poster img {
     width: 300px;
     height: 500px;
     border: solid 1px #CCC
 }
 
-.rotate_gallery{
+/* refrence avaliable in readme file */
+.rotate_gallery {
     align-self: center;
-    width:300px;
-    height:200px;
+    width: 300px;
+    height: 200px;
     transform-style: preserve-3d;
-    animation:rotate 20s linear infinite;
-  }
-  
-  @keyframes rotate{
-    from{
-      transform:perspective(1200px) rotateY(0deg);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: perspective(1200px) rotateY(0deg);
     }
-    
-    to{
-      transform:perspective(1200px) rotateY(360deg);
+
+    to {
+        transform: perspective(1200px) rotateY(360deg);
     }
-  }
-  
-  .rotate_gallery span{
-    position:absolute;
-    width:100%;
-    height:100%;
-    transform-origin:center;
-    transform-style:preserve-3d;
-    transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
-  }
-  
-  .rotate_gallery span img{
-    position:absolute;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
+}
+
+.rotate_gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+
+.rotate_gallery span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 0 5%;
+    margin: 5% 0 0 0;
+}
+
+.footer footer {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 120%;
+    font-weight: bold;
+}

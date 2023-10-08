@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Quela', sans-serif;
     margin: 0;
@@ -8,9 +8,8 @@
 body {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
-    background-image: url(../images/background_index.jpg);
+    background-image: url(../images/background/background_index.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat repeat;
@@ -25,16 +24,15 @@ body {
     align-items: center;
     justify-content: space-between;
     height: max-content;
-    background-color: rgba(0, 0, 0, 0.614);
+    background-color: rgba(0, 0, 0, 0.503);
     padding: 0 5%;
-    margin: 0;
+    margin: 0 0 5% 0;
 }
 
 .header_left {
     flex: 1;
     display: flex;
     align-items: center;
-    /* justify-content: flex-start; */
 }
 
 .header_left span {
@@ -42,6 +40,11 @@ body {
     color: rgb(255, 0, 0);
     font-size: 300%;
     font-weight: bolder;
+}
+
+.header_left span:hover {
+    color: rgba(255, 255, 255, 0.775);
+    text-shadow: 2px 2px rgb(255, 0, 0);
 }
 
 .header_right {
@@ -60,7 +63,12 @@ body {
     font-weight: bold;
 }
 
-.header_icons{
+.header_right a:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+}
+
+.header_icons {
     flex: 1;
     display: flex;
     align-items: center;
@@ -68,10 +76,26 @@ body {
     gap: 10px;
 }
 
-.header_icons span{
+.header_icons img {
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.729);
-    font-size: 200%;
+    height: 30px;
+}
+
+.header_icons img:hover {
+    transform: scale(1.2);
+}
+
+/* logo section */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.logo img {
+    height: 200px;
 }
 
 /* 2nd part */
@@ -79,8 +103,8 @@ body {
     display: flex;
     align-items: center;
     height: max-content;
-    gap: 10%;
-    padding: 10% 5%;
+    gap: 5%;
+    padding: 0 5%;
 }
 
 .detail {
@@ -90,40 +114,39 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 30px;
-    /* position: fixed; */
 }
 
-.one_piece{
+.one_piece {
     font-size: 400%;
     font-weight: bolder;
     color: rgba(255, 255, 255, 0.898);
 }
 
-.rating{
+.rating {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
 }
 
-.checked{
-    color: rgb(246, 255, 0);
+.rating img {
+    height: 30px;
 }
 
-.description{
+.description {
     font-size: 120%;
     color: rgba(206, 206, 206, 0.855);
 }
 
 .genre,
 .release,
-.author{
+.author {
     display: flex;
 }
 
 .genre_heading,
 .release_heading,
-.author_heading{
+.author_heading {
     font-size: 120%;
     color: rgba(255, 0, 0, 0.932);
     font-weight: bolder;
@@ -131,19 +154,19 @@ body {
 
 .genre_content,
 .release_content,
-.author_content{
+.author_content {
     font-size: 120%;
     color: rgba(255, 255, 255, 0.932);
     font-style: italic;
 }
 
-.play_button{
+.play_button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.button{
+.button {
     min-width: 120px;
     min-height: 30px;
     font-weight: bold;
@@ -153,51 +176,73 @@ body {
     border-radius: 2px;
 }
 
-.button:hover{
+.button:hover {
     background-color: rgba(255, 0, 0, 0.5);
 }
 
-.button:active{
+.button:active {
     background-color: rgb(0, 0, 0);
 }
 
-.button:focus{
+.button:focus {
     outline-color: transparent;
     outline-style: solid;
     box-shadow: 0 0 0 2px rgb(255, 0, 0);
 }
 
-.opening_clip,
-.opening_clip a{
+/* refrence avaliable in readme file */
+.imageBox {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
-}
-
-.opening_clip a{
     flex-wrap: wrap;
 }
 
-.opening_clip a i{
-    font-size: 1000%;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.808);
+.imageBox a {
+    position: relative;
 }
 
-.opening_clip a i:hover{
-    color: rgba(255, 0, 0, 0.7);
+.imageBox img {
+    width: 150px;
 }
 
-.opening_clip a i:active{
-    color: rgba(0, 0, 0, 0.7);
+.imageBox .hoverImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
 }
 
-.opening_clip a span{
+.imageBox a:hover .hoverImg {
+    display: flex;
+}
+
+.imageBox a span {
     font-size: 150%;
-    color: rgba(255, 255, 255, 0.932);
+    color: rgb(255, 255, 255, 1);
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.9);
     flex-wrap: wrap;
 }
 
-  
+.imageBox a span:hover {
+    color: rgb(255, 0, 0, 0.9);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.616);
+    margin: 10% 0 0 0;
+    padding: 0 5%;
+}
+
+.footer footer {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 120%;
+    font-weight: bold;
+}

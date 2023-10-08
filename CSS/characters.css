@@ -165,7 +165,7 @@ td {
     border-collapse: collapse;
     text-align: center;
     background-color: rgba(122, 122, 122, 0.218);
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 thead {
@@ -219,14 +219,14 @@ td a:hover:not(.poster a, .voice_actor a){
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.members-description main {
+.members-description header {
     color: rgb(255, 255, 255);
     font-size: 300%;
     font-weight: bold;
-    margin: 5% 0;
+    margin: 5% 0 0 0;
 }
 
-.members-description main:hover {
+.members-description header:hover {
     color: rgb(255, 0, 0);
     background-color: aliceblue;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.601);

@@ -216,17 +216,17 @@ body {
   gap: 10px;
 }
 
-.content_of_plot h1,
-.content_of_plot h2,
-.content_of_plot h3,
+.content_of_plot .h1,
+.content_of_plot .h2,
+.content_of_plot .h3,
 .content_of_plot p{
   font-weight: bold;
   color: rgba(0, 0, 0);
 }
 
-.content_of_plot h1:hover,
-.content_of_plot h2:hover,
-.content_of_plot h3:hover,
+.content_of_plot .h1:hover,
+.content_of_plot .h2:hover,
+.content_of_plot .h3:hover,
 .content_of_plot p:hover{
   color: rgba(255, 255, 255);
   background-color: #f65964;
@@ -238,21 +238,21 @@ body {
   
 }
 
-.content_of_plot h1{
+.content_of_plot .h1{
   font-size: 300%;
 }
 
-.content_of_plot h2{
+.content_of_plot .h2{
   font-size: 250%;
 }
 
-.content_of_plot h3{
+.content_of_plot .h3{
   font-size: 200%;
 }
 
-.content_of_plot h1:not(:hover),
-.content_of_plot h2:not(:hover),
-.content_of_plot h3:not(:hover){
+.content_of_plot .h1:not(:hover),
+.content_of_plot .h2:not(:hover),
+.content_of_plot .h3:not(:hover){
   text-shadow: 10px 5px 10px rgba(96, 96, 96, 0.682);
   text-decoration: 2px underline rgb(255, 0, 0);
 }

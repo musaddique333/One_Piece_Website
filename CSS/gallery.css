@@ -151,8 +151,8 @@ body {
 /* refrence avaliable in readme file */
 .rotate_gallery {
     align-self: center;
-    width: 24.9vw;
-    height: 200px;
+    width: 30vw;
+    height: 30vh;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
 }
@@ -173,7 +173,7 @@ body {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(30vw);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(36.2vw);
 }
 
 .rotate_gallery span img {

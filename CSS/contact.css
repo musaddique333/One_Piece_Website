@@ -145,7 +145,7 @@ p {
 
 label {
     vertical-align: middle;
-    font-size: 100%;
+    font-size: 150%;
     color: rgba(238, 238, 238, 0.7);
 }
 
@@ -166,8 +166,10 @@ textarea {
 }
 
 textarea {
+    position: relative;
+    padding-top: 0.7%;
     height: 120px;
-    font-size: 1.4em;
+    font-size: 100%;
     line-height: 1em;
     resize: none;
 }
@@ -181,12 +183,12 @@ input[type="submit"] {
 
 input[type="submit"]:focus {
     background: rgba(238, 238, 238, 0.2);
-    color: rgba(238, 238, 238, 0.2);
+    color: rgb(255, 255, 255);
 }
 
 ::-moz-selection {
     background: rgba(238, 238, 238, 0.2);
-    color: rgba(238, 238, 238, 0.2);
+    color: rgba(255, 255, 255, 0.786);
     text-shadow: none;
 }
 

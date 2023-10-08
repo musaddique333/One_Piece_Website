@@ -43,8 +43,8 @@ body {
 }
 
 .header_left span:hover {
-    color: rgba(255, 255, 255, 0.775);
-    text-shadow: 2px 2px rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(255, 0, 0);
 }
 
 .header_right {
@@ -65,7 +65,10 @@ body {
 
 .header_right a:hover {
     color: rgb(255, 0, 0);
-    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(1.1);
 }
 
 .header_icons {
@@ -96,6 +99,10 @@ body {
 
 .logo img {
     height: 200px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
 }
 
 /* 2nd part */
@@ -178,6 +185,8 @@ body {
 
 .button:hover {
     background-color: rgba(255, 0, 0, 0.5);
+    padding: 10px;
+    transform: scale(1.1);
 }
 
 .button:active {
@@ -198,6 +207,19 @@ body {
     justify-content: flex-start;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.imageBox:hover {
+    position: relative;
+    transform: scale(1.01);
+}
+
+.imageBox .watch:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px rgb(6, 6, 6, 0.5);
 }
 
 .imageBox a {

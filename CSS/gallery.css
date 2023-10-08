@@ -151,10 +151,10 @@ body {
 /* refrence avaliable in readme file */
 .rotate_gallery {
     align-self: center;
-    width: 300px;
+    width: 24.9vw;
     height: 200px;
     transform-style: preserve-3d;
-    animation: rotate 20s linear infinite;
+    animation: rotate 30s linear infinite;
 }
 
 @keyframes rotate {
@@ -173,7 +173,7 @@ body {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(30vw);
 }
 
 .rotate_gallery span img {

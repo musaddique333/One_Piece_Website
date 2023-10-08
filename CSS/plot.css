@@ -106,13 +106,13 @@ body {
 .toc-wrapper {
   background: #fff;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
-  min-width: 600px;
-  max-width: fit-content;
+  max-width: 90vw;
   margin: auto;
   border-radius: 0 50px 0 50px;
   padding: 0;
   max-height: 500px;
   overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 .toc-header {
@@ -126,7 +126,7 @@ body {
 }
 
 .toc-heading {
-  font-size: 30px;
+  font-size: 300%;
   color: #fff;
   margin: 0;
   text-align: center;
@@ -163,7 +163,7 @@ body {
   color: #4c4c4c;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 120%;
   display: block;
   padding: 10px 10px 10px 50px;
   border-radius: 10px;

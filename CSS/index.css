@@ -111,6 +111,8 @@ body {
     height: max-content;
     gap: 5%;
     padding: 0 1%;
+    max-width: 100vw;
+    overflow-x: scroll;
 }
 
 .detail {

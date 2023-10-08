@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
   height: max-content;
   background-color: rgba(0, 0, 0, 0.503);
-  padding: 0 5%;
+  padding: 0 1%;
   margin: 0 0 5% 0;
 }
 
@@ -90,7 +90,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 0 1%;
   margin: 0;
 }
 
@@ -201,7 +201,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  padding: 0 5%;
+  padding: 0 1%;
   margin: 5% 0 0 0;
   background-color: rgba(255, 255, 255, 0.5);
   border: #181d3b;
@@ -268,7 +268,7 @@ body {
   height: 50px;
   background-color: rgba(0, 0, 0, 0.616);
   margin: 10% 0 0 0;
-  padding: 0 5%;
+  padding: 0 1%;
 }
 
 .footer footer {

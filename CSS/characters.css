@@ -7,7 +7,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-image: url(../images/background/background_characters.jpeg);
     background-position: top;
     background-size: 400px;
@@ -23,7 +22,7 @@ body {
     justify-content: space-between;
     height: max-content;
     background-color: rgba(0, 0, 0, 0.503);
-    padding: 0 5%;
+    padding: 0 1%;
     margin: 0 0 5% 0;
 }
 
@@ -91,7 +90,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 0 1%;
     margin: 0;
 }
 
@@ -103,13 +102,23 @@ body {
     transform: scale(1.1);
 }
 
+.crew-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1%;
+}
+
 .crew-name{
     align-self: center;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 5px 5px rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.48);
+    border-radius: 10px;
+    padding: 10px;
     font-size: 500%;
     font-weight: bold;
-    margin: 0;
 }
 
 .know-more {
@@ -121,6 +130,12 @@ body {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
     padding: 10px;
+    max-width: fit-content;
+
+}
+
+.know-more:hover {
+    transform: scale(1.1);
 }
 
 .know-more a{
@@ -133,8 +148,8 @@ body {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.616);
-    padding: 0 2%;
-    margin: 5% 0 5% 0;
+    padding: 0 1%;
+    margin: 5% 0 0 0;
     max-width: max-content;
     align-self: center;
     max-height: 1000px;
@@ -198,7 +213,7 @@ td a:hover:not(.poster a, .voice_actor a){
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 5%;
+    padding: 0 1%;
     margin: 0 0 5% 0;
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -275,14 +290,13 @@ summary {
 
 /* footer */
 .footer {
-    margin: 5% 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.616);
-    padding: 0 5%;
-    margin: 0;
+    padding: 0 1%;
+    margin: 10% 0 0 0;
 }
 
 .footer footer {

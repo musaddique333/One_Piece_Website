@@ -95,11 +95,11 @@ body {
 }
 
 .logo img {
-  height: 200px;
+  height: 300px;
 }
 
 .logo img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 /* table of contents part */

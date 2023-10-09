@@ -97,19 +97,22 @@ body {
 }
 
 .logo img {
-    height: 200px;
+    height: 300px;
 }
 
 .logo img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 /* 2nd part */
 .gallery {
     display: flex;
     flex-direction: column;
-    padding: 0 1%;
+    padding: 5% 1%;
     gap: 10px;
+    background-color: rgba(0, 0, 0, 0.587);
+    border-radius: 20px;
+
 }
 
 .gallery_of_three {
@@ -130,6 +133,12 @@ body {
     border: solid 1px #CCC
 }
 
+.gallery_of_three img:hover {
+    width: 500px;
+    height: 350px;
+    transition: 0.5s;
+}
+
 /* 3rd part */
 .poster {
     display: flex;
@@ -148,11 +157,17 @@ body {
     border: solid 1px #CCC
 }
 
+.poster img:hover {
+    width: 350px;
+    height: 550px;
+    transition: 0.3s;
+}
+
 /* refrence avaliable in readme file */
 .rotate_gallery {
     align-self: center;
-    width: 30vw;
-    height: 30vh;
+    width: 40vh;
+    height: 25vh;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
 }
@@ -173,7 +188,7 @@ body {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(36.2vw);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(48.2vh);
 }
 
 .rotate_gallery span img {

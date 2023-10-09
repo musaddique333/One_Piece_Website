@@ -26,6 +26,8 @@ body {
     background-color: rgba(0, 0, 0, 0.503);
     padding: 0 1%;
     margin: 0 0 5% 0;
+    top: 0;
+    position: sticky;
 }
 
 .header_left {
@@ -100,10 +102,6 @@ body {
     height: 300px;
 }
 
-.logo img:hover {
-    transform: scale(1.5);
-}
-
 /* 2nd part */
 .basic_info {
     display: flex;
@@ -169,7 +167,7 @@ body {
     font-style: italic;
 }
 
-.play_button a{
+.play_button a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +180,7 @@ body {
     border-radius: 3px;
 }
 
-.play_button a:hover{
+.play_button a:hover {
     color: rgba(255, 255, 255, 0.932);
     background-color: rgba(0, 0, 0, 0.577);
     border: 1px solid rgba(255, 0, 0, 0.932);
@@ -251,6 +249,8 @@ body {
     background-color: rgba(0, 0, 0, 0.616);
     margin: 10% 0 0 0;
     padding: 0 1%;
+    bottom: 0;
+    position: sticky;
 }
 
 .footer footer {

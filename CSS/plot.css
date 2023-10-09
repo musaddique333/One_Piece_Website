@@ -24,6 +24,8 @@ body {
   background-color: rgba(0, 0, 0, 0.503);
   padding: 0 1%;
   margin: 0 0 5% 0;
+  top: 0;
+  position: sticky;
 }
 
 .header_left {
@@ -195,7 +197,7 @@ body {
 }
 
 /* cotent part */
-.content_of_plot{
+.content_of_plot {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,7 +210,7 @@ body {
   border-radius: 50px;
 }
 
-.arcs_and_sagas{
+.arcs_and_sagas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,7 +221,7 @@ body {
 .content_of_plot .h1,
 .content_of_plot .h2,
 .content_of_plot .h3,
-.content_of_plot p{
+.content_of_plot p {
   font-weight: bold;
   color: rgba(0, 0, 0);
 }
@@ -227,7 +229,7 @@ body {
 .content_of_plot .h1:hover,
 .content_of_plot .h2:hover,
 .content_of_plot .h3:hover,
-.content_of_plot p:hover{
+.content_of_plot p:hover {
   color: rgba(255, 255, 255);
   background-color: #f65964;
   cursor: pointer;
@@ -235,29 +237,28 @@ body {
   border-radius: 10px;
   max-width: fit-content;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6)
-  
 }
 
-.content_of_plot .h1{
+.content_of_plot .h1 {
   font-size: 300%;
 }
 
-.content_of_plot .h2{
+.content_of_plot .h2 {
   font-size: 250%;
 }
 
-.content_of_plot .h3{
+.content_of_plot .h3 {
   font-size: 200%;
 }
 
 .content_of_plot .h1:not(:hover),
 .content_of_plot .h2:not(:hover),
-.content_of_plot .h3:not(:hover){
+.content_of_plot .h3:not(:hover) {
   text-shadow: 10px 5px 10px rgba(96, 96, 96, 0.682);
   text-decoration: 2px underline rgb(255, 0, 0);
 }
 
-.content_of_plot p{
+.content_of_plot p {
   font-size: 120%;
 }
 
@@ -269,6 +270,8 @@ body {
   background-color: rgba(0, 0, 0, 0.616);
   margin: 10% 0 0 0;
   padding: 0 1%;
+  bottom: 0;
+  position: sticky;
 }
 
 .footer footer {

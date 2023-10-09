@@ -2,66 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.cdnfonts.com/css/quela" rel="stylesheet">
-    <title>Contact us forum</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.cdnfonts.com/css/quela" rel="stylesheet">
+  <title>Contact us forum</title>
 </head>
 
 <body>
-    <div class="header">
-        <header class="header_left">
-            <a href="https://aniwatch.to/" style="text-decoration: none;"><span>ANIME</span></a>
-        </header>
-        <hgroup class="header_right">
-            <a href="./index.html">Home</a>
-            <a href="./characters.html">Characters</a>
-            <a href="./plot.html">Plot</a>
-            <a href="./gallery.html">Gallery</a>
-            <a href="./contact.html" style="color: red; font-size: 150%;">Contact</a>
-        </hgroup>
-        <div class="header_icons">
-            <a href="https://aniwatch.to/search?keyword=one+piece"><img src="./images/Icons/search.png" alt=""></a>
-            <a href="https://aniwatch.to/user/profile"><img src="./images/Icons/contacts.png" alt=""></a>
-        </div>
+  <div class="header">
+    <header class="header_left">
+      <a href="https://aniwatch.to/" style="text-decoration: none"><span>ANIME</span></a>
+    </header>
+    <div class="header_right">
+      <a href="./index.html">Home</a>
+      <a href="./characters.html">Characters</a>
+      <a href="./plot.html">Plot</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./contact.html" style="color: red; font-size: 150%">Contact</a>
     </div>
-    <div class="logo">
-        <img src="./images/Icons/One-Piece-Logo.png" alt="">
+    <div class="header_icons">
+      <a href="https://aniwatch.to/search?keyword=one+piece">
+        <img src="./images/Icons/search.png" alt=""></a>
+      <a href="https://aniwatch.to/user/profile">
+        <img src="./images/Icons/contacts.png" alt="">
+      </a>
     </div>
-    <div class="shade">
-		<div class="blackboard">
-				<div class="form">
-						<p>
-								<label>Name: </label>
-								<input type="text" />
-						</p>
-						<p>
-								<label>Email: </label>
-								<input type="text" />
-						</p>
-						<p>
-								<label>Phone: </label>
-								<input type="tel" />
-						</p>
-						<p>
-								<label>Subject: </label>
-								<input type="text" />
-						</p>
-						<p>
-								<label>Message: </label>
-								<textarea></textarea>
-						</p>
-						<p class="wipeout">
-								<input type="submit" value="Send" />
-						</p>
-				</div>
-		</div>
+  </div>
+  <div class="logo">
+    <img src="./images/Icons/One-Piece-Logo.png" alt="logo">
+  </div>
+  <div class="links_to_handel">
+    <div class="social_links">
+      <a class="github" href="https://github.com/musaddique333">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/mohammed-musaddique-a05313227/">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a class="twitter" href="https://twitter.com/musaddique333">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="instagram" href="https://www.instagram.com/mohammed_musaddique_mogal/">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
     </div>
-    <div class="footer">
-        <footer class="copy_right">© 2020 Anime, Inc. All Rights Reserved.</footer>
-    </div>  
+    <div class="link_name">
+      <a class="github" href="https://github.com/musaddique333">
+        <span>@musaddique333</span>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/mohammed-musaddique-a05313227/">
+        <span>@Mohammed Musaddique</span>
+      </a>
+      <a class="twitter" href="https://twitter.com/musaddique333">
+        <span>@musaddique333</span>
+      </a>
+      <a class="instagram" href="https://www.instagram.com/mohammed_musaddique_mogal/">
+        <span>@mohammed_musaddique_mogal</span>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <form id="contact" method="post">
+      <h3>Contact Form</h3>
+      <h4>Contact us for custom quote</h4>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">
+          Submit
+        </button>
+      </fieldset>
+    </form>
+  </div>
+  <div class="footer">
+    <footer class="copy_right">
+      © 2020 Anime, Inc. All Rights Reserved.
+    </footer>
+  </div>
 </body>
 
 </html>
